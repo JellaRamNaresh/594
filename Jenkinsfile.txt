@@ -7,21 +7,21 @@ stage('clone')
 {
 steps
 {
-git "https://github.com/Melon654/demo2-rev.git"
+git "https://github.com/JellaRamNaresh/594.git"
 }
 }
   stage('build')
   {
     steps
     {
-      sh 'javac write.java'
+      sh 'javac hello.java'
     }
   }
   stage('run')
   {
     steps
     {
-      sh 'java write'
+      sh 'java hello'
     }
   }
 }
